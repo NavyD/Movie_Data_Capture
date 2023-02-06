@@ -10,6 +10,9 @@ import signal
 import sys
 import time
 import typing
+import urllib3
+import signal
+import platform
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -683,7 +686,7 @@ def period(delta, pattern):
 
 
 if __name__ == '__main__':
-    version = '6.4.1'
+    version = '6.5.1'
     urllib3.disable_warnings()  # Ignore http proxy warning
     app_start = time.time()
 
